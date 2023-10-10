@@ -49,7 +49,6 @@ const randomBtn = document.querySelector("#random-button");
 let currentItem = 0;
 
 // load info
-
 window.addEventListener("DOMContentLoaded", () => {
 	showPerson();
 });
@@ -77,7 +76,6 @@ prevBtn.addEventListener("click", () => {
 });
 
 // random button
-
 randomBtn.addEventListener("click", () => {
 	currentItem = getRandomNumber();
 	showPerson();
