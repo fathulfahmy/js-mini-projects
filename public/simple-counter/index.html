@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title></title>
+		<link rel="stylesheet" href="../styles.css" />
+	</head>
+	<body>
+		<!-- navbar -->
+		<nav
+			class="bg-black text-white flex flex-wrap justify-between p-6 self-center"
+		>
+			<div>Simple Counter</div>
+		</nav>
+
+		<!-- main -->
+		<main>
+			<div class="h-screen flex flex-wrap items-center justify-center">
+				<div class="">
+					<h2
+						class="text-center text-3xl font-extrabold sm:text-4xl lg:text-5xl"
+					>
+						Counter
+					</h2>
+					<div class="flex justify-center">
+						<span
+							class="text-3xl font-extrabold sm:text-4xl lg:text-5xl"
+							id="value"
+						>
+							0
+						</span>
+					</div>
+					<div>
+						<button
+							class="decrease btn bg-black text-white rounded-lg p-2 mt-2 sm:text-xl sm:px-4 sm:py-3 lg:text-2xl lg:px-5 lg:py-4"
+						>
+							-
+						</button>
+						<button
+							class="reset btn bg-black text-white rounded-lg p-2 mt-2 sm:text-xl sm:px-4 sm:py-3 lg:text-2xl lg:px-5 lg:py-4"
+						>
+							Reset
+						</button>
+						<button
+							class="increase btn bg-black text-white rounded-lg p-2 mt-2 sm:text-xl sm:px-4 sm:py-3 lg:text-2xl lg:px-5 lg:py-4"
+						>
+							+
+						</button>
+					</div>
+				</div>
+			</div>
+		</main>
+		<script src="app.js"></script>
+	</body>
+</html>
