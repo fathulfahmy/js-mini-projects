@@ -559,60 +559,36 @@ video {
   display: flex;
 }
 
+.h-0 {
+  height: 0px;
+}
+
 .h-28 {
   height: 7rem;
-}
-
-.h-screen {
-  height: 100vh;
-}
-
-.h-10 {
-  height: 2.5rem;
-}
-
-.h-12 {
-  height: 3rem;
-}
-
-.h-52 {
-  height: 13rem;
-}
-
-.h-48 {
-  height: 12rem;
-}
-
-.h-40 {
-  height: 10rem;
 }
 
 .h-32 {
   height: 8rem;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
 .w-28 {
   width: 7rem;
 }
 
-.w-52 {
-  width: 13rem;
+.w-96 {
+  width: 24rem;
 }
 
 .w-full {
   width: 100%;
 }
 
-.w-60 {
-  width: 15rem;
-}
-
-.w-80 {
-  width: 20rem;
-}
-
-.w-96 {
-  width: 24rem;
+.flex-grow {
+  flex-grow: 1;
 }
 
 .flex-wrap {
@@ -637,6 +613,10 @@ video {
 
 .self-center {
   align-self: center;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .rounded-full {
@@ -687,9 +667,26 @@ video {
   padding-right: 1rem;
 }
 
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.pb-2 {
+  padding-bottom: 0.5rem;
+}
+
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+
+.pt-2 {
+  padding-top: 0.5rem;
 }
 
 .text-center {
@@ -703,11 +700,6 @@ video {
 
 .text-5xl {
   font-size: 3rem;
-  line-height: 1;
-}
-
-.text-7xl {
-  font-size: 4.5rem;
   line-height: 1;
 }
 
@@ -732,6 +724,22 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-150 {
+  transition-duration: 150ms;
+}
+
+.ease-in {
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
 @media (min-width: 640px) {
