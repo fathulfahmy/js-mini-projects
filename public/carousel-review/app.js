@@ -75,4 +75,14 @@ prevBtn.addEventListener("click", () => {
 	if (currentItem < 0) currentItem = reviews.length;
 	showPerson();
 });
+
 // random button
+
+randomBtn.addEventListener("click", () => {
+	currentItem = getRandomNumber();
+	showPerson();
+});
+
+function getRandomNumber() {
+	return Math.floor(Math.random() * reviews.length);
+}
