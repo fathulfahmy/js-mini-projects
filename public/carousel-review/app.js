@@ -43,7 +43,7 @@ const job = document.getElementById("job");
 const info = document.getElementById("info");
 
 const prevBtn = document.querySelector("#prev-button");
-const nextBtn = document.querySelector(".next-button");
+const nextBtn = document.querySelector("#next-button");
 const randomBtn = document.querySelector("#random-button");
 
 let currentItem = 0;
@@ -62,13 +62,17 @@ function showPerson() {
 	info.textContent = item.text;
 }
 
-// previous button
+// next button
 nextBtn.addEventListener("click", () => {
 	currentItem++;
 	if (currentItem > reviews.length - 1) currentItem = 0;
 	showPerson();
 });
 
-// next button
-
+// previous button
+prevBtn.addEventListener("click", () => {
+	currentItem--;
+	if (currentItem < 0) currentItem = reviews.length;
+	showPerson();
+});
 // random button
