@@ -7,29 +7,24 @@
 		<link rel="stylesheet" href="../styles.css" />
 	</head>
 	<body>
-		<!-- navbar -->
-		<nav
-			class="bg-black text-white flex flex-wrap justify-between p-6 self-center"
-		>
+		<nav class="bg-black text-white flex p-6 self-center h-[74px]">
 			<div>Random Color Generator</div>
 		</nav>
-
-		<!-- main -->
-		<main>
-			<div class="h-screen flex items-center bg-white">
-				<div class="ml-8 sm:ml-10 lg:ml-14">
-					<h2 class="text-3xl font-extrabold sm:text-5xl lg:text-7xl">
-						Background Color:
-						<span class="color-code">#FFFFFF</span>
-					</h2>
-					<button
-						class="bg-black hover:bg-slate-700 text-white rounded-lg p-2 mt-2 sm:text-xl sm:px-4 sm:py-3 lg:text-2xl lg:px-5 lg:py-4"
-						id="button"
-					>
-						Click me
-					</button>
-				</div>
-			</div>
+		<main class="h-[calc(100vh-74px)] flex items-center">
+			<section
+				class="bg-white w-fit pl-3 sm:pl-4 lg:pl-6 py-4 ml-6 sm:ml-10 lg:ml-14"
+			>
+				<h2 class="text-3xl font-extrabold sm:text-5xl lg:text-7xl">
+					Background Color:
+					<span class="w-fit color-code">#FFFFFF</span>
+				</h2>
+				<button
+					class="bg-black hover:bg-slate-700 text-white p-2 mt-2 sm:text-xl sm:px-4 sm:py-3 lg:text-2xl lg:px-5 lg:py-4"
+					id="button"
+				>
+					Click me
+				</button>
+			</section>
 		</main>
 		<script src="app.js"></script>
 	</body>

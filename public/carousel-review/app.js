@@ -49,7 +49,7 @@ const randomBtn = document.querySelector("#random-button");
 let currentItem = 0;
 
 // load info
-window.addEventListener("DOMContentLoaded", () => {
+window.addEventListener("DOMContentLoaded", function () {
 	showPerson();
 });
 
@@ -62,21 +62,21 @@ function showPerson() {
 }
 
 // next button
-nextBtn.addEventListener("click", () => {
+nextBtn.addEventListener("click", function () {
 	currentItem++;
 	if (currentItem > reviews.length - 1) currentItem = 0;
 	showPerson();
 });
 
 // previous button
-prevBtn.addEventListener("click", () => {
+prevBtn.addEventListener("click", function () {
 	currentItem--;
 	if (currentItem < 0) currentItem = reviews.length;
 	showPerson();
 });
 
 // random button
-randomBtn.addEventListener("click", () => {
+randomBtn.addEventListener("click", function () {
 	currentItem = getRandomNumber();
 	showPerson();
 });

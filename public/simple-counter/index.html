@@ -7,51 +7,45 @@
 		<link rel="stylesheet" href="../styles.css" />
 	</head>
 	<body>
-		<!-- navbar -->
 		<nav
 			class="bg-black text-white flex flex-wrap justify-between p-6 self-center h-[75px]"
 		>
 			<div>Simple Counter</div>
 		</nav>
 
-		<!-- main -->
-		<main>
-			<div
-				class="h-[calc(100vh-75px)] flex flex-wrap items-center justify-center"
-			>
-				<div>
-					<h2
-						class="text-center text-3xl font-extrabold sm:text-4xl lg:text-5xl"
+		<main
+			class="h-[calc(100vh-75px)] flex flex-wrap items-center justify-center"
+		>
+			<section>
+				<h2 class="text-center text-3xl font-extrabold sm:text-4xl lg:text-5xl">
+					Counter
+				</h2>
+				<div class="flex justify-center">
+					<span
+						class="text-7xl font-extrabold sm:text-8xl lg:text-9xl"
+						id="value"
 					>
-						Counter
-					</h2>
-					<div class="flex justify-center">
-						<span
-							class="text-5xl font-extrabold sm:text-7xl lg:text-9xl"
-							id="value"
-						>
-							0
-						</span>
-					</div>
-					<div>
-						<button
-							class="decrease btn bg-black hover:bg-slate-700 text-white rounded-lg p-2 mt-2 sm:text-xl sm:px-4 sm:py-3 lg:text-2xl lg:px-5 lg:py-4"
-						>
-							-
-						</button>
-						<button
-							class="reset btn bg-black hover:bg-slate-700 text-white rounded-lg p-2 mt-2 sm:text-xl sm:px-4 sm:py-3 lg:text-2xl lg:px-5 lg:py-4"
-						>
-							Reset
-						</button>
-						<button
-							class="increase btn bg-black hover:bg-slate-700 text-white rounded-lg p-2 mt-2 sm:text-xl sm:px-4 sm:py-3 lg:text-2xl lg:px-5 lg:py-4"
-						>
-							+
-						</button>
-					</div>
+						0
+					</span>
 				</div>
-			</div>
+				<div>
+					<button
+						class="decrease btn bg-black hover:bg-slate-700 text-white rounded-lg p-2 mt-2 text-lg px-3 py-2 sm:text-xl sm:px-4 sm:py-3 lg:text-2xl lg:px-5 lg:py-4"
+					>
+						-
+					</button>
+					<button
+						class="reset btn bg-black hover:bg-slate-700 text-white rounded-lg p-2 mt-2 text-lg px-3 py-2 sm:text-xl sm:px-4 sm:py-3 lg:text-2xl lg:px-5 lg:py-4"
+					>
+						Reset
+					</button>
+					<button
+						class="increase btn bg-black hover:bg-slate-700 text-white rounded-lg p-2 mt-2 text-lg px-3 py-2 sm:text-xl sm:px-4 sm:py-3 lg:text-2xl lg:px-5 lg:py-4"
+					>
+						+
+					</button>
+				</div>
+			</section>
 		</main>
 		<script src="app.js"></script>
 	</body>
