@@ -6,7 +6,7 @@ const button = document.getElementById("button");
 const colorCode = document.querySelector(".color-code");
 
 // button event listener
-button.addEventListener("click", () => {
+button.addEventListener("click", function () {
 	// append hex code
 	let randomColor = "#";
 	for (let i = 0; i < 6; i++) {
