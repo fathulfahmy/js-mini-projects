@@ -9,14 +9,16 @@
 	<body>
 		<!-- navbar -->
 		<nav
-			class="bg-black text-white flex flex-wrap justify-between p-6 self-center"
+			class="bg-black text-white flex flex-wrap justify-between p-6 self-center h-[75px]"
 		>
 			<div>Simple Counter</div>
 		</nav>
 
 		<!-- main -->
 		<main>
-			<div class="h-screen flex flex-wrap items-center justify-center">
+			<div
+				class="h-[calc(100vh-75px)] flex flex-wrap items-center justify-center"
+			>
 				<div>
 					<h2
 						class="text-center text-3xl font-extrabold sm:text-4xl lg:text-5xl"
@@ -33,17 +35,17 @@
 					</div>
 					<div>
 						<button
-							class="decrease btn bg-black text-white rounded-lg p-2 mt-2 sm:text-xl sm:px-4 sm:py-3 lg:text-2xl lg:px-5 lg:py-4"
+							class="decrease btn bg-black hover:bg-slate-700 text-white rounded-lg p-2 mt-2 sm:text-xl sm:px-4 sm:py-3 lg:text-2xl lg:px-5 lg:py-4"
 						>
 							-
 						</button>
 						<button
-							class="reset btn bg-black text-white rounded-lg p-2 mt-2 sm:text-xl sm:px-4 sm:py-3 lg:text-2xl lg:px-5 lg:py-4"
+							class="reset btn bg-black hover:bg-slate-700 text-white rounded-lg p-2 mt-2 sm:text-xl sm:px-4 sm:py-3 lg:text-2xl lg:px-5 lg:py-4"
 						>
 							Reset
 						</button>
 						<button
-							class="increase btn bg-black text-white rounded-lg p-2 mt-2 sm:text-xl sm:px-4 sm:py-3 lg:text-2xl lg:px-5 lg:py-4"
+							class="increase btn bg-black hover:bg-slate-700 text-white rounded-lg p-2 mt-2 sm:text-xl sm:px-4 sm:py-3 lg:text-2xl lg:px-5 lg:py-4"
 						>
 							+
 						</button>

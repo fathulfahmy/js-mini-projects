@@ -6,7 +6,7 @@ const btns = document.querySelectorAll(".btn");
 console.log(btns);
 btns.forEach((btn) => {
 	// each button event listener
-	btn.addEventListener("click", (e) => {
+	btn.addEventListener("click", function(e) {
 		btnStyle = e.currentTarget.classList;
 		// increment decrement
 		if (btnStyle.contains("increase")) count++;
