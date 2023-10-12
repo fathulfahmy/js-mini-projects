@@ -22,18 +22,27 @@
 			</a>
 		</nav>
 		<!-- preloader -->
+		<div
+			class="fixed top-0 bottom-0 left-0 right-0 bg-black flex justify-center items-center -z-[999]"
+			id="preloader"
+		>
+			<img
+				class="max-w-[144px]"
+				src="../assets/video-backdrop/loading-anim.webp"
+			/>
+		</div>
 
 		<!-- video backdrop -->
 		<header class="flex flex-col items-center">
 			<video
-				class="-z-[2] h-screen w-full object-cover"
-				src="../../assets/video-backdrop/animal-video.mp4"
+				class="-z-[2] h-screen w-full object-cover fixed top-0 bottom-0 left-0 right-0"
+				src="../assets/video-backdrop/snake-video.mp4"
 				autoplay
 				muted
 				loop
 			></video>
-			<h2 class="font-extrabold text-3xl sm:text-5xl text-white -mt-[50vh]">
-				Animal
+			<h2 class="font-Montserrat font-bold text-4xl sm:text-5xl lg:text-6xl text-white mt-[40vh]">
+				Slither
 			</h2>
 		</header>
 	</body>
