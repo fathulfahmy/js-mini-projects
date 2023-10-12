@@ -5,14 +5,22 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title></title>
 		<link rel="stylesheet" href="../styles.css" />
+		<script
+			src="https://kit.fontawesome.com/ee95c21cf6.js"
+			crossorigin="anonymous"
+		></script>
 	</head>
 	<body>
-		<nav
-			class="bg-black text-white flex flex-wrap justify-between p-6 self-center h-[74px]"
-		>
-			<div>Simple Counter</div>
+		<nav class="bg-black text-white flex items-center justify-between">
+			<div class="font-bold p-6">Simple Counter</div>
+			<a href="../../index.html">
+				<span
+					class="hover:bg-slate-700 rounded-lg flex items-center justify-center p-3 mr-3"
+				>
+					<i class="fa-solid fa-house"></i>
+				</span>
+			</a>
 		</nav>
-
 		<main
 			class="h-[calc(100vh-74px)] flex flex-wrap items-center justify-center"
 		>
@@ -22,7 +30,7 @@
 				</h2>
 				<div class="flex justify-center">
 					<span
-						class="text-7xl font-extrabold sm:text-8xl lg:text-9xl"
+						class="text-black text-7xl font-extrabold sm:text-8xl lg:text-9xl"
 						id="value"
 					>
 						0

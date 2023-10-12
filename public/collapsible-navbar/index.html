@@ -12,18 +12,22 @@
 	</head>
 	<body>
 		<nav>
-			<div class="bg-black text-white p-6 flex justify-between">
-				<h2 class="flex-grow font-bold">Collapsible Navbar</h2>
-				<button class="" id="menu-btn">
-					<div class="hover:bg-slate-600 bg-black rounded-lg w-8 h-6">
+			<div class="bg-black text-white flex items-center justify-between">
+				<h2 class="font-bold p-6">Collapsible Navbar</h2>
+				<button id="menu-btn">
+					<span
+						class="hover:bg-slate-700 rounded-lg flex items-center justify-center p-3 mr-3"
+					>
 						<i class="fa-solid fa-bars"></i>
-					</div>
+					</span>
 				</button>
 			</div>
 			<ul class="h-0 overflow-hidden bg-black text-white" id="nav-links">
-				<li class="px-6 pb-2">Home</li>
-				<li class="px-6 py-2">About</li>
-				<li class="px-6 pt-2 pb-6">Contact</li>
+				<a href="../../index.html">
+					<li class="hover:bg-slate-700 px-6 py-3">Home</li>
+				</a>
+				<li class="hover:bg-slate-700 px-6 py-3">About</li>
+				<li class="hover:bg-slate-700 px-6 pt-3 pb-6">Contact</li>
 			</ul>
 		</nav>
 		<script src="app.js"></script>

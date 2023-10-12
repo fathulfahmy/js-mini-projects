@@ -15,8 +15,16 @@ btns.forEach((btn) => {
 		// change text number
 		value.textContent = count;
 		// change color
-		if (count < 0) value.style.color = "red";
-		if (count > 0) value.style.color = "green";
-		if (count === 0) value.style.color = "black";
+		if (count < 0) {
+			value.classList.replace("text-black", "text-red-600");
+		}
+		if (count > 0) {
+			value.classList.replace("text-black", "text-blue-600");
+		}
+		if (count === 0) {
+			value.classList.add("text-black");
+			value.classList.remove("text-red-600");
+			value.classList.remove("text-blue-600");
+		}
 	});
 });
