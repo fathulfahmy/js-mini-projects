@@ -598,6 +598,18 @@ video {
   margin-top: 40vh;
 }
 
+.mt-16{
+  margin-top: 4rem;
+}
+
+.mt-12{
+  margin-top: 3rem;
+}
+
+.mt-6{
+  margin-top: 1.5rem;
+}
+
 .block{
   display: block;
 }
@@ -628,6 +640,10 @@ video {
 
 .h-screen{
   height: 100vh;
+}
+
+.h-\[calc\(100vh-72px\)\]{
+  height: calc(100vh - 72px);
 }
 
 .min-h-\[200px\]{
