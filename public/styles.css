@@ -662,6 +662,14 @@ video {
   min-height: 160px;
 }
 
+.min-h-\[90vh\] {
+  min-height: 90vh;
+}
+
+.min-h-\[70vh\] {
+  min-height: 70vh;
+}
+
 .w-0 {
   width: 0px;
 }
@@ -920,6 +928,10 @@ video {
     margin-top: 1rem;
   }
 
+  .sm\:min-h-\[144px\] {
+    min-height: 144px;
+  }
+
   .sm\:w-72 {
     width: 18rem;
   }
@@ -997,6 +1009,13 @@ video {
 
   .lg\:text-9xl {
     font-size: 8rem;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:text-5xl {
+    font-size: 3rem;
     line-height: 1;
   }
 }
