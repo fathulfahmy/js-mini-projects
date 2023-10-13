@@ -22,29 +22,59 @@
 			</a>
 		</nav>
 		<main>
-			<div class="relative h-[40vh] w-[80vw]">
-				<div class="absolute bg-red-500 h-full w-full left-0">
-					<img
-						class="object-cover h-full w-full"
-						src="../assets/carousel-review/man-1.jpg"
-						alt=""
-					/>
+			<section class="flex justify-center mt-6 sm:mt-12">
+				<div class="relative h-[20vh] sm:h-[40vh] w-[80vw] overflow-hidden">
+					<div class="slide absolute h-full w-full">
+						<img
+							class="object-cover h-full w-full transition-all"
+							src="../assets/image-slider/building-1.jpg"
+							alt=""
+						/>
+					</div>
+					<div class="slide absolute h-full w-full transition-all">
+						<img
+							class="object-cover h-full w-full"
+							src="../assets/image-slider/building-2.jpg"
+							alt=""
+						/>
+					</div>
+					<div class="slide absolute h-full w-full transition-all">
+						<img
+							class="object-cover h-full w-full"
+							src="../assets/image-slider/building-3.jpg"
+							alt=""
+						/>
+					</div>
+					<div class="slide absolute h-full w-full transition-all">
+						<img
+							class="object-cover h-full w-full"
+							src="../assets/image-slider/building-4.jpg"
+							alt=""
+						/>
+					</div>
+					<div class="slide absolute h-full w-full transition-all">
+						<img
+							class="object-cover h-full w-full"
+							src="../assets/image-slider/building-5.jpg"
+							alt=""
+						/>
+					</div>
 				</div>
-				<div class="absolute bg-green-500 h-full w-full left-[100%]">
-					<img
-						class="object-cover h-full w-full"
-						src="../assets/carousel-review/man-2.jpg"
-						alt=""
-					/>
-				</div>
-				<div class="absolute bg-blue-500 h-full w-full left-[200%]">
-					<img
-						class="object-cover h-full w-full"
-						src="../assets/carousel-review/man-3.jpg"
-						alt=""
-					/>
-				</div>
-			</div>
+			</section>
+			<section class="flex justify-center mt-2 gap-1">
+				<button
+					class="bg-black hover:bg-slate-700 text-white rounded-lg px-6 py-2"
+					id="prev-button"
+				>
+					<i class="fa-solid fa-arrow-left"></i>
+				</button>
+				<button
+					class="bg-black hover:bg-slate-700 text-white rounded-lg px-6 py-2"
+					id="next-button"
+				>
+					<i class="fa-solid fa-arrow-right"></i>
+				</button>
+			</section>
 		</main>
 		<script src="app.js"></script>
 	</body>
